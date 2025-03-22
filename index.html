@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOODSICIFY - AI Music Playlist Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">♪</span> MOODSICIFY
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Playlists</a>
+                <a href="#">Contact</a>
+            </div>
+            <button class="login-btn">Sign In</button>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Discover your perfect <span class="accent">playlist</span> with AI</h1>
+            <p class="lead">Let our intelligent algorithm create personalized music playlists based on your preferences, mood, and listening habits.</p>
+            <button class="cta-btn">Create Your Playlist</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://png.pngtree.com/png-vector/20230410/ourmid/pngtree-transparent-playpause-audio-bar-icon-for-musicvideo-repeat-menu-playback-vector-png-image_51359862.jpg" alt="Music Playlist Illustration">
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose <span class="accent">MOODSICIFY</span>?</h2>
+            <p>Our AI-powered platform offers a unique music discovery experience</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎵</div>
+                <h3>Smart Recommendations</h3>
+                <p>Our AI algorithm learns your taste and suggests songs you'll love.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎭</div>
+                <h3>Mood-Based Playlists</h3>
+                <p>Create the perfect soundtrack for any mood or activity.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💾</div>
+                <h3>Save & Share</h3>
+                <p>Save your favorite playlists and share them with friends.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="playlist-creator">
+    <div class="container">
+        <div class="section-header">
+            <h2>Create Your <span class="accent">Playlist</span></h2>
+            <p>Customize your preferences and let our AI do the rest</p>
+        </div>
+        <div class="creator-container">
+            <form id="playlist-form">
+                <div class="form-group">
+                    <label for="favorite-artist">Favorite Artists (separate with commas)</label>
+                    <input type="text" id="favorite-artist" placeholder="e.g. Taylor Swift, The Weeknd, Coldplay">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Preferred Genre</label>
+                    <select id="genre">
+                        <option value="" disabled selected>Select genre</option>
+                        <option value="pop">Pop</option>
+                        <option value="rock">Rock</option>
+                        <option value="hiphop">Hip Hop</option>
+                        <option value="rnb">R&B</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="classical">Classical</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="country">Country</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Current Mood</label>
+                    <div class="mood-selector">
+                        <div class="mood-chip">Energetic</div>
+                        <div class="mood-chip">Relaxed</div>
+                        <div class="mood-chip">Happy</div>
+                        <div class="mood-chip">Melancholic</div>
+                        <div class="mood-chip">Focused</div>
+                        <div class="mood-chip">Romantic</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="playlist-length">Playlist Length</label>
+                    <select id="playlist-length">
+                        <option value="short">Short (10 songs)</option>
+                        <option value="medium" selected>Medium (20 songs)</option>
+                        <option value="long">Long (30 songs)</option>
+                    </select>
+                </div>
+                <button type="submit" class="generate-btn">Generate Playlist</button>
+            </form>
+        </div>
+
+        <div class="playlist-results">
+            <div class="playlist-card">
+                <div class="playlist-header">
+                    <div class="playlist-title">Your Indie Alternative Mix</div>
+                    <div class="playlist-actions">
+                        <button class="playlist-action-btn">Save</button>
+                        <button class="playlist-action-btn">Share</button>
+                    </div>
+                </div>
+                <div class="track-list">
+                    <div class="track-item">
+                        <div class="track-number">1</div>
+                        <div class="track-info">
+                            <div class="track-title">Float On</div>
+                            <div class="track-artist">Modest Mouse</div>
+                        </div>
+                        <div class="track-duration">3:28</div>
+                        <div class="track-play">▶</div>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">2</div>
+                        <div class="track-info">
+                            <div class="track-title">Skinny Love</div>
+                            <div class="track-artist">Bon Iver</div>
+                        </div>
+                        <div class="track-duration">3:58</div>
+                        <div class="track-play">▶</div>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">3</div>
+                        <div class="track-info">
+                            <div class="track-title">Midnight City</div>
+                            <div class="track-artist">M83</div>
+                        </div>
+                        <div class="track-duration">4:01</div>
+                        <div class="track-play">▶</div>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">4</div>
+                        <div class="track-info">
+                            <div class="track-title">No Care</div>
+                            <div class="track-artist">Daughter</div>
+                        </div>
+                        <div class="track-duration">5:07</div>
+                        <div class="track-play">▶</div>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">5</div>
+                        <div class="track-info">
+                            <div class="track-title">Do I Wanna Know?</div>
+                            <div class="track-artist">Arctic Monkeys</div>
+                        </div>
+                        <div class="track-duration">4:32</div>
+                        <div class="track-play">▶</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="logo">
+            <span class="logo-icon">♪</span> MOODSICIFY
+        </div>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="copyright">
+            © 2025 MOODSICIFY. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
