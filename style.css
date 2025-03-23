@@ -64,7 +64,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--black);
+    color: var(--red);
 }
 
 .login-btn {
@@ -93,16 +93,6 @@ nav {
     padding-right: 40px;
 }
 
-.hero-image {
-    flex: 1;
-    text-align: center;
-}
-
-.hero-image img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
 h1 {
     font-size: 48px;
@@ -181,6 +171,36 @@ h2 {
 h3 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.feature-features {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#spotify-logo {
+    height: 40px;
+    width: 40px;
+}
+
+#appleMusic-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text-container span {
+    font-size: 16px;
+    color: var(--black);
+}
+
+.feature-features li {
+    margin-bottom: 20px;
 }
 
 .playlist-creator {
@@ -380,7 +400,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: var(--black);
+    color: var(--grey);
 }
 
 .copyright {
